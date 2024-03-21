@@ -1,0 +1,50 @@
+
+.slider{
+    height: 100px;
+    overflow: hidden;
+  
+   
+}
+.slider div{
+    height: 100px;
+
+    padding: 2px 15px;
+  box-sizing: border-box;
+}
+.sliding-text1 {
+    animation: slide 8s linear infinite;
+  
+    font-size: 50px;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(195,32,81,1) 65%, rgba(2,0,36,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+.sliding-text2 {
+   
+    font-size: 50px;
+    background: linear-gradient(90deg, rgba(0,212,255,1) 0%, rgba(195,32,81,1) 65%, rgba(2,0,36,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-weight: 700;
+}
+
+
+
+@keyframes slide{
+    0% { margin-top: 0px; }
+    5% { margin-top: 0px; }
+    33% { margin-top: -100px; }
+    38% { margin-top: -100px; }
+    66% { margin-top: -200px; }
+    71% { margin-top: -200px; }
+    100% { margin-top: -300px; }
+
+}
+@media (max-width: 600px) {
+    .sliding-text1,.sliding-text2 {
+      font-size: 30px;
+    }
+  }
